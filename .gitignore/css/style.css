@@ -1,0 +1,30 @@
+#signup-era {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 300px;
+}
+#txtUsername {
+    text-align: center;
+    color: #000000;
+}
+ul#users-online {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+ul#users-online li.call-action {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    background-color: #ccc;
+    margin-bottom: 2px;
+    color: #000;
+    cursor: pointer;
+}
+ul#users-online li.call-action:hover {
+    background: #1c7430;
+    color: #ffffff;
+}

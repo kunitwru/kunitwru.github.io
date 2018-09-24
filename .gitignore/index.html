@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebRTC</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="jquery.js"></script>
+        <script src="peer.js"></script>
+        <script src="socket.io.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="chat-area" class="container" style="display: none">
+                    <h3 id="my-peer-id">Tên của bạn : </h3>
+                    <hr />
+                    <div class="row">
+                        <div class="list-user col-sm-3">
+                            <h6 class="card-header">Người đang online</h6>
+                            <ul id="users-online">
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-9">
+                            <video id="localStream" width="400" controls></video>
+                            <video id="remoteStream" width="400" controls></video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="signup-era">
+                <form id="signupForm">
+                    <div class="form-group">
+                        <input type="text" id="txtUsername" class="form-control" placeholder="Nhập tên bạn vào để chát">
+                    </div>
+                    <center>
+                        <button class="btn btn-success" type="submit" id="btnSignUp">Đăng ký</button>
+                    </center>
+                </form>
+
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
